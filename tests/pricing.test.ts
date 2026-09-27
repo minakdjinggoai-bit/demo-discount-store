@@ -1,0 +1,1 @@
+import {describe,it,expect} from 'vitest'; import {calculateTotal} from '../lib/pricing'; describe('pricing',()=>{it('applies percentage discount',()=>{expect(calculateTotal(100000,20)).toBe(80000)})});

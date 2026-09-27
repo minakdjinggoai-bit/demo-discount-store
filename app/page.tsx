@@ -1,0 +1,2 @@
+import {calculateTotal} from '@/lib/pricing';
+export default function Page(){const price=100000, discount=20, total=calculateTotal(price,discount); return <main><h1>Discount Store</h1><div className="card"><h2>Wireless Mouse</h2><p><span className="strike">Rp{price.toLocaleString('id-ID')}</span> &nbsp; <span className="badge">{discount}% OFF</span></p><p>Total</p><p className="price">Rp{total.toLocaleString('id-ID')}</p><p className="muted">Bug: the discount is displayed but not applied to total.</p></div></main>}
